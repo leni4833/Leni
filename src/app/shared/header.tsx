@@ -16,7 +16,7 @@ export default function Header(){
         
         <ul className="flex gap-[20px] justify-end bg-gray-600 text-white">
             {menulist.map((item,index)=>{
-                return(<li key={index}><a href={item.path}>{item.name}</a></li>)
+                return(<li key={index}><Link href={item.path}>{item.name}</Link></li>)
             })}
         </ul>
     </div>
